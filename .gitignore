@@ -1,0 +1,17 @@
+# Ignore target directory
+/target/
+
+# Ignore IDE files
+/.idea/
+/.vscode/
+
+# Ignore build output
+/build/
+/classes/
+/bin/
+
+# Ignore application properties
+/application.properties
+
+# Ignore .env file
+.env
