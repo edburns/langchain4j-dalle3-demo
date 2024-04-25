@@ -2,6 +2,8 @@
 
 A super simple Java Spring project that utilizes DALL-E3, LangChain4J, and Azure Open AI.
 
+![Screenshot of the executed project](./images/screenshot-run-image-creation.png)
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -16,7 +18,11 @@ A super simple Java Spring project that utilizes DALL-E3, LangChain4J, and Azure
     git clone https://github.com/sandraahlgrimm/langchain4j-dalle3-demo.git
     ```
 
-2. Set up the environment variables:
+2. Create an Azure Open AI account and get the required credentials:
+
+    - [Azure Open AI Documentation](https://learn.microsoft.com/azure/ai-services/openai/how-to/create-resource?pivots=cli)
+ 
+3. Set up the environment variables:
 
     - `AZURE_OPENAI_ENDPOINT`: Your Azure OpenAI Endpoint.
     - `AZURE_OPENAI_DEPLOYMENT_NAME`: Your Azure Open AI Deployment name.
@@ -45,7 +51,11 @@ A super simple Java Spring project that utilizes DALL-E3, LangChain4J, and Azure
 ```json
 Prompt: "Create an image of a horse race with three horses."
 
-revisedPrompt = "Imagine a dynamic scene of a horse race. There are three horses vigorously running on a turf track with determination in their eyes. One horse is white with a streamlined build, the other is a majestic black stallion with a glossy coat, and the third is a vibrant chestnut horse with strong muscular legs. Their jockeys are skillfully riding them; a Middle-Eastern woman in blue silks on the white horse, a Hispanic man in red silks on the black stallion, and a Caucasian woman in green silks riding the chestnut horse. It's a bright sunny day, and the crowd in the stands is a blur of excited faces and colorful attire."
+revisedPrompt = "Imagine a dynamic scene of a horse race.
+There are three horses vigorously running on a turf track with determination in their eyes.
+One horse is white with a streamlined build, the other is a majestic black stallion with a glossy coat, and the third is a vibrant chestnut horse with strong muscular legs.
+Their jockeys are skillfully riding them; a Middle-Eastern woman in blue silks on the white horse, a Hispanic man in red silks on the black stallion, and a Caucasian woman in green silks riding the chestnut horse.
+It's a bright sunny day, and the crowd in the stands is a blur of excited faces and colorful attire."
 ```
 
 ![Generated image](./images/generated_00.png)
