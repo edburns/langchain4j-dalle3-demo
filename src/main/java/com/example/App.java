@@ -24,7 +24,7 @@ public class App
             .apiKey(System.getenv("AZURE_OPENAI_API_KEY"))
             .logRequestsAndResponses(true)
             .build();
-        Response<Image> response = model.generate("Create an image of a horse race with three horses.");
+        Response<Image> response = model.generate("Create an image of a cartoon person drinking a cup of hot coffee.");
         System.out.println(response.toString());
         Image image = response.content();
         System.out.println("The generated image is here: " + image.url());
